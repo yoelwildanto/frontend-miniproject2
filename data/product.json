@@ -1,0 +1,305 @@
+{
+    "cafeProducts": [
+      {
+        "id": 1,
+        "productName": "Espresso",
+        "categoryId": 1,
+        "price": 2.99,
+        "stock": 50,
+        "description": "A strong and concentrated coffee served in small shots.",
+        "statusId": 1,
+        "image": "espresso.jpg"
+      },
+      {
+        "id": 2,
+        "productName": "Cappuccino",
+        "categoryId": 1,
+        "price": 3.49,
+        "stock": 45,
+        "description": "Espresso mixed with steamed milk and topped with frothed milk.",
+        "statusId": 1,
+        "image": "cappuccino.jpg"
+      },
+      {
+        "id": 3,
+        "productName": "Latte",
+        "categoryId": 1,
+        "price": 3.99,
+        "stock": 40,
+        "description": "Espresso with a larger amount of steamed milk and a small amount of frothed milk.",
+        "statusId": 1,
+        "image": "latte.jpg"
+      },
+      {
+        "id": 4,
+        "productName": "Mocha",
+        "categoryId": 1,
+        "price": 4.49,
+        "stock": 35,
+        "description": "Espresso with steamed milk, chocolate syrup, and topped with whipped cream.",
+        "statusId": 1,
+        "image": "mocha.jpg"
+      },
+      {
+        "id": 5,
+        "productName": "Fruit Smoothie",
+        "categoryId": 2,
+        "price": 5.99,
+        "stock": 20,
+        "description": "A refreshing blend of assorted fruits and yogurt.",
+        "statusId": 1,
+        "image": "fruit_smoothie.jpg"
+      },
+      {
+        "id": 6,
+        "productName": "Chocolate Croissant",
+        "categoryId": 3,
+        "price": 2.49,
+        "stock": 25,
+        "description": "A delicious flaky pastry filled with chocolate.",
+        "statusId": 1,
+        "image": "chocolate_croissant.jpg"
+      },
+      {
+        "id": 7,
+        "productName": "Blueberry Muffin",
+        "categoryId": 3,
+        "price": 1.99,
+        "stock": 30,
+        "description": "Moist muffin with blueberries, perfect for breakfast.",
+        "statusId": 1,
+        "image": "blueberry_muffin.jpg"
+      },
+      {
+        "id": 8,
+        "productName": "Iced Tea",
+        "categoryId": 4,
+        "price": 2.49,
+        "stock": 40,
+        "description": "Refreshing iced tea with lemon slices.",
+        "statusId": 1,
+        "image": "iced_tea.jpg"
+      },
+      {
+        "id": 9,
+        "productName": "Chicken Caesar Salad",
+        "categoryId": 5,
+        "price": 7.99,
+        "stock": 15,
+        "description": "Classic Caesar salad with grilled chicken.",
+        "statusId": 1,
+        "image": "caesar_salad.jpg"
+      },
+      {
+        "id": 10,
+        "productName": "Vegetarian Panini",
+        "categoryId": 6,
+        "price": 6.49,
+        "stock": 10,
+        "description": "Grilled panini with a variety of fresh vegetables.",
+        "statusId": 1,
+        "image": "vegetarian_panini.jpg"
+      },
+      {
+        "id": 11,
+        "productName": "Iced Caramel Macchiato",
+        "categoryId": 1,
+        "price": 4.99,
+        "stock": 25,
+        "description": "Espresso with cold milk and vanilla syrup, topped with caramel drizzle.",
+        "statusId": 1,
+        "image": "iced_caramel_macchiato.jpg"
+      },
+      {
+        "id": 12,
+        "productName": "Bagel with Cream Cheese",
+        "categoryId": 3,
+        "price": 3.49,
+        "stock": 30,
+        "description": "Toasted bagel served with a generous spread of cream cheese.",
+        "statusId": 1,
+        "image": "bagel_cream_cheese.jpg"
+      },
+      {
+        "id": 13,
+        "productName": "Green Tea Latte",
+        "categoryId": 4,
+        "price": 4.29,
+        "stock": 20,
+        "description": "Matcha green tea with steamed milk and a touch of sweetness.",
+        "statusId": 1,
+        "image": "green_tea_latte.jpg"
+      },
+      {
+        "id": 14,
+        "productName": "Ham and Cheese Croissant",
+        "categoryId": 3,
+        "price": 3.99,
+        "stock": 25,
+        "description": "Flaky croissant filled with ham and melted cheese.",
+        "statusId": 1,
+        "image": "ham_cheese_croissant.jpg"
+      },
+      {
+        "id": 15,
+        "productName": "Pumpkin Spice Latte",
+        "categoryId": 1,
+        "price": 4.49,
+        "stock": 15,
+        "description": "Espresso with steamed milk, pumpkin spice, and topped with whipped cream.",
+        "statusId": 1,
+        "image": "pumpkin_spice_latte.jpg"
+      },
+      {
+        "id": 16,
+        "productName": "Chocolate Chip Cookie",
+        "categoryId": 3,
+        "price": 1.79,
+        "stock": 40,
+        "description": "Freshly baked chocolate chip cookie.",
+        "statusId": 1,
+        "image": "chocolate_chip_cookie.jpg"
+      },
+      {
+        "id": 17,
+        "productName": "Mango Tango Smoothie",
+        "categoryId": 2,
+        "price": 5.49,
+        "stock": 20,
+        "description": "Smoothie with mango, pineapple, and orange juice.",
+        "statusId": 1,
+        "image": "mango_tango_smoothie.jpg"
+      },
+      {
+        "id": 18,
+        "productName": "Caprese Panini",
+        "categoryId": 6,
+        "price": 6.99,
+        "stock": 10,
+        "description": "Grilled panini with fresh mozzarella, tomatoes, and basil.",
+        "statusId": 1,
+        "image": "caprese_panini.jpg"
+      },
+      {
+        "id": 19,
+        "productName": "Chai Tea Latte",
+        "categoryId": 4,
+        "price": 3.99,
+        "stock": 30,
+        "description": "Spiced tea with steamed milk and a dash of cinnamon.",
+        "statusId": 1,
+        "image": "chai_tea_latte.jpg"
+      },
+      {
+        "id": 20,
+        "productName": "Avocado Toast",
+        "categoryId": 3,
+        "price": 5.49,
+        "stock": 15,
+        "description": "Sliced avocado on toasted multigrain bread.",
+        "statusId": 1,
+        "image": "avocado_toast.jpg"
+      },
+      {
+        "id": 21,
+        "productName": "Raspberry Lemonade",
+        "categoryId": 4,
+        "price": 3.49,
+        "stock": 25,
+        "description": "Refreshing lemonade with a burst of raspberry flavor.",
+        "statusId": 1,
+        "image": "raspberry_lemonade.jpg"
+      },
+      {
+        "id": 22,
+        "productName": "Vegetarian Wrap",
+        "categoryId": 6,
+        "price": 6.99,
+        "stock": 20,
+        "description": "A healthy wrap filled with fresh vegetables and hummus.",
+        "statusId": 1,
+        "image": "vegetarian_wrap.jpg"
+      },
+      {
+        "id": 23,
+        "productName": "Iced Americano",
+        "categoryId": 1,
+        "price": 3.29,
+        "stock": 30,
+        "description": "Diluted espresso over ice, perfect for a strong coffee kick.",
+        "statusId": 1,
+        "image": "iced_americano.jpg"
+      },
+      {
+        "id": 24,
+        "productName": "Blue Lagoon Smoothie",
+        "categoryId": 2,
+        "price": 5.99,
+        "stock": 15,
+        "description": "Smoothie with blueberries, pineapple, and coconut milk.",
+        "statusId": 1,
+        "image": "blue_lagoon_smoothie.jpg"
+      },
+      {
+        "id": 25,
+        "productName": "Turkey Club Sandwich",
+        "categoryId": 6,
+        "price": 8.49,
+        "stock": 18,
+        "description": "Classic club sandwich with turkey, bacon, lettuce, and tomato.",
+        "statusId": 1,
+        "image": "turkey_club_sandwich.jpg"
+      },
+      {
+        "id": 26,
+        "productName": "Cinnamon Roll",
+        "categoryId": 3,
+        "price": 2.99,
+        "stock": 22,
+        "description": "Soft and gooey cinnamon roll topped with icing.",
+        "statusId": 1,
+        "image": "cinnamon_roll.jpg"
+      },
+      {
+        "id": 27,
+        "productName": "Peach Passion Smoothie",
+        "categoryId": 2,
+        "price": 5.49,
+        "stock": 17,
+        "description": "Smoothie with peaches, passion fruit, and orange juice.",
+        "statusId": 1,
+        "image": "peach_passion_smoothie.jpg"
+      },
+      {
+        "id": 28,
+        "productName": "Chicken Quesadilla",
+        "categoryId": 5,
+        "price": 7.99,
+        "stock": 12,
+        "description": "Grilled tortilla filled with seasoned chicken and melted cheese.",
+        "statusId": 1,
+        "image": "chicken_quesadilla.jpg"
+      },
+      {
+        "id": 29,
+        "productName": "Hot Chocolate",
+        "categoryId": 1,
+        "price": 3.79,
+        "stock": 28,
+        "description": "Rich and creamy hot chocolate topped with whipped cream.",
+        "statusId": 1,
+        "image": "hot_chocolate.jpg"
+      },
+      {
+        "id": 30,
+        "productName": "Mediterranean Salad",
+        "categoryId": 5,
+        "price": 8.49,
+        "stock": 10,
+        "description": "Fresh salad with tomatoes, cucumbers, feta cheese, and olives.",
+        "statusId": 1,
+        "image": "mediterranean_salad.jpg"
+      }
+    ]
+  }
+  
