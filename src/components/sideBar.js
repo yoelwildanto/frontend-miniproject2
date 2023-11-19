@@ -1,4 +1,4 @@
-import { Box, Text, Image, HStack } from "@chakra-ui/react";
+import { Box, Text, HStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import {
@@ -52,7 +52,7 @@ const Sidebar = () => {
     setActiveSubReport(menu);
   };
   return (
-    <Box w="15%" h="100vh" bgColor="#ffffff" position="fixed">
+    <Box w="15%" h="100vh" bgColor="#132043" position="fixed">
       <Box
         h="100vh"
         display="flex"
@@ -162,7 +162,12 @@ const Sidebar = () => {
                   }}
                 />
                 <IconBox stroke={1.3} size="24px" />
-                <Text fontFamily="Poppins" fontSize="18px" fontWeight="600">
+                <Text
+                  cursor={"pointer"}
+                  fontFamily="Poppins"
+                  fontSize="18px"
+                  fontWeight="600"
+                >
                   Product
                 </Text>
               </Box>
@@ -287,7 +292,12 @@ const Sidebar = () => {
                   }}
                 />
                 <IconChartPie stroke={1.5} size="24px" />
-                <Text fontFamily="Poppins" fontSize="18px" fontWeight="600">
+                <Text
+                  cursor={"pointer"}
+                  fontFamily="Poppins"
+                  fontSize="18px"
+                  fontWeight="600"
+                >
                   Report
                 </Text>
               </Box>
