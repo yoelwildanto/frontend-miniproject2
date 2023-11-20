@@ -64,7 +64,7 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
         <Box display="flex" justifyContent="space-between">
           <Text
             color="#000000"
-            fontFamily="Nunito"
+            fontFamily="Poppins"
             fontWeight="700"
             fontSize="20px"
           >
@@ -104,7 +104,7 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
         <Box mt="10px">
           <Grid
             templateColumns="repeat(6, 1fr)"
-            gridColumnGap={1}
+            gridColumnGap={5}
             gridRowGap={10}
             overflow="hidden"
             padding="20px"
@@ -126,7 +126,7 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
                                                     {item?.description}
                                                 </Text>
                                             </Box>
-                                            <Text color='#FF7940' fontSize='16px' fontWeight='600'>
+                                            <Text color='#8FB381' fontSize='16px' fontWeight='600'>
                                                Rp. {item?.price}
                                             </Text>
                                         </Stack>
@@ -142,6 +142,8 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
                 alignItems="center"
                 justifyContent="center"
                 key={item.id}
+                boxShadow={"lg"}
+
               >
                 {item?.statusId !== 1 ? (
                   <Card
@@ -178,7 +180,7 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
                         top="38%"
                         left="87%"
                         transform="translate(-50%, -50%)"
-                        bgColor="rgba(148, 148, 148, 0.7)"
+                        bgColor="#132043"
                         borderRadius="4px"
                       >
                         <IconPlus color="#ffffff" />
@@ -192,7 +194,7 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
                             {item?.description}
                           </Text>
                         </Box>
-                        <Text color="#FF7940" fontSize="16px" fontWeight="600">
+                        <Text color="#8FB381" fontSize="16px" fontWeight="600">
                           Rp. {item?.price}
                         </Text>
                       </Stack>
@@ -205,21 +207,23 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
                     h="300px"
                     padding="0"
                     borderRadius="16px"
-                    bgColor="rgba(148, 148, 148, 0.5)"
+                    bgColor="#132043"
                   >
                     <Box
                       display="flex"
                       alignItems="flex-end"
-                      justifyContent="right"
+                      justifyContent="center"
                     >
                       <Image
-                        w="100%"
+                        h="140px"
+                        p={"10px"}
                         borderTopRadius="16px"
+                        objectFit={"contain"}
                         src={`${process.env.REACT_APP_IMAGE_URL}/product/${
                           item?.image
                         }`}
                       />
-                      <Box
+                      {/* <Box
                         w="35px"
                         h="35px"
                         display="flex"
@@ -233,17 +237,17 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
                         borderRadius="4px"
                       >
                         <IconPlus color="#ffffff" />
-                      </Box>
+                      </Box> */}
                     </Box>
                     <CardBody padding="10px">
                       <Stack spacing="4">
-                        <Heading size="sm">{item?.productName}</Heading>
+                        <Heading color={"white"} size="sm">{item?.productName}</Heading>
                         <Box h="60px" overflow="hidden">
-                          <Text textAlign="justify" fontSize="14px">
+                          <Text color={"white"} textAlign="justify" fontSize="14px">
                             {item?.description}
                           </Text>
                         </Box>
-                        <Text color="#FF7940" fontSize="16px" fontWeight="600">
+                        <Text color="#8FB381" fontSize="16px" fontWeight="600">
                           Rp. {item?.price}
                         </Text>
                       </Stack>
