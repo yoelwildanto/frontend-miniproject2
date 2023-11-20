@@ -200,7 +200,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
                           />
                           <Box hidden={image ? true : false}>
                             <Image
-                            h="10px"
+                            h="250px"
                             objectFit={"contain"}
                               src={`${
                                 process.env.REACT_APP_IMAGE_URL
