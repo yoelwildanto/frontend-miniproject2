@@ -1,5 +1,5 @@
-import { useDisclosure, Box, Text, Input, Button } from '@chakra-ui/react';
-import { IconSearch, IconPlus } from '@tabler/icons-react';
+import { useDisclosure, Box, Text, Button } from '@chakra-ui/react';
+import { IconPlus } from '@tabler/icons-react';
 import ModalCreateProduct from '../modal/createProduct';
 
 const HeaderManageProduct  = () => {

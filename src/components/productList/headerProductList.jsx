@@ -1,5 +1,5 @@
-import { useDisclosure, Box, Text, Input, Button } from '@chakra-ui/react';
-import { IconSearch, IconPlus } from '@tabler/icons-react';
+import { Box, Text, Input, Button } from '@chakra-ui/react';
+import { IconSearch } from '@tabler/icons-react';
 import { useFormik } from "formik";
 
 const HeaderProductList = ({ inputSearch }) => {

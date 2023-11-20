@@ -1,29 +1,8 @@
-import { useDisclosure, Box, Image } from "@chakra-ui/react";
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-} from "@chakra-ui/react";
-import {
-  Button,
-  Input,
-  InputGroup,
-  InputLeftAddon,
-  Textarea,
-  Select,
-} from "@chakra-ui/react";
-import {
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-} from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
+import {  Modal,  ModalOverlay,  ModalContent,  ModalHeader, ModalFooter,  ModalBody,  ModalCloseButton,} from "@chakra-ui/react";
+import {  Button,  Input,  InputGroup,  InputLeftAddon,  Textarea,  Select,} from "@chakra-ui/react";
+import {  FormControl,  FormLabel} from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import { IconPhoto } from "@tabler/icons-react";
 import { useDropzone } from "react-dropzone";
 import { useFormik } from "formik";
 import { useToast } from "@chakra-ui/react";

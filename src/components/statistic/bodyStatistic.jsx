@@ -1,7 +1,5 @@
-import { Box, Button, Text, Image, Heading, Stack, Divider, ButtonGroup } from '@chakra-ui/react';
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
-import { Grid, GridItem } from '@chakra-ui/react'
-import { IconPlus } from '@tabler/icons-react';
+import { Box, Text, Image, Stack } from '@chakra-ui/react';
+import { Card, CardBody } from '@chakra-ui/react'
 import { IconCurrencyDollar, IconBox, IconUser, } from '@tabler/icons-react';
 import { IconTrendingUp } from '@tabler/icons-react';
 import { AreaChart } from '../Chart';
