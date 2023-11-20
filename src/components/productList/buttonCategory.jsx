@@ -38,43 +38,43 @@ function ButtonCategory({ onCategoryChange }) {
         >
           <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
             <Image src='/images/allmenu.svg' />
-            <Text color='#FF7940'>All Menu</Text>
+            <Text color='#8FB381'>All Menu</Text>
           </Box>
         </Button>
         <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(1)} _hover={{bgColor: "#FFF7F3"}} border='none' _focus={{border: "none", boxShadow: "none",}}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                         <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[1])?.image}`} />
-                        <Text color='#FF7940'>{(category[1])?.categoryName}</Text>
+                        <Text color='#8FB381'>{(category[1])?.categoryName}</Text>
                     </Box> 
                 </Button>
                 <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(2)}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                         <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[2]  )?.image}`}/>
-                        <Text color='#FF7940'>{(category[2]  )?.categoryName}</Text>
+                        <Text color='#8FB381'>{(category[2]  )?.categoryName}</Text>
                     </Box> 
                 </Button>
                 <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(3)}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                         <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[3]  )?.image}`} />
-                        <Text color='#FF7940'>{(category[3]  )?.categoryName}</Text>
+                        <Text color='#8FB381'>{(category[3]  )?.categoryName}</Text>
                     </Box> 
                 </Button>
                 <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(4)}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                         <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[4]  )?.image}`} />
-                        <Text color='#FF7940'>{(category[4]  )?.categoryName}</Text>
+                        <Text color='#8FB381'>{(category[4]  )?.categoryName}</Text>
                     </Box> 
                 </Button>
                 <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(5)}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                         <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[5]  )?.image}`} />
-                        <Text color='#FF7940'>{(category[5]  )?.categoryName}</Text>
+                        <Text color='#8FB381'>{(category[5]  )?.categoryName}</Text>
                     </Box> 
                 </Button>
                 <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(6)}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                         <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[6]  )?.image}`} />
-                        <Text color='#FF7940'>{(category[6])?.categoryName}</Text>
+                        <Text color='#8FB381'>{(category[6])?.categoryName}</Text>
                     </Box> 
                 </Button>
       </Box>
