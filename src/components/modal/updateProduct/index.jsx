@@ -199,14 +199,16 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
                             opacity="0"
                           />
                           <Box hidden={image ? true : false}>
-                            <img
+                            <Image
+                            h="10px"
+                            objectFit={"contain"}
                               src={`${
                                 process.env.REACT_APP_IMAGE_URL
                               }/product/${formik.values.image}`}
                             />
                           </Box>
                         </Box>
-                        {image && <img src={image} />}
+                        {image && <img src={image} style={{objectFit:"contain"}}/>}
                       </Box>
                     </FormControl>
                     <FormControl>
