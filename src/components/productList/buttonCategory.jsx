@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Button, Text, Image, useToast } from '@chakra-ui/react';
+import {IconCategory} from '@tabler/icons-react'
 import axios from 'axios';
 
 function ButtonCategory({ onCategoryChange }) {
@@ -37,44 +38,45 @@ function ButtonCategory({ onCategoryChange }) {
           _focus={{ border: 'none', boxShadow: 'none' }}
         >
           <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
-            <Image src='/images/allmenu.svg' />
+            {/* <Image src='\images\category.svg' /> */}
+            <IconCategory size={"60px"}/>
             <Text color='#8FB381'>All Menu</Text>
           </Box>
         </Button>
         <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(1)} _hover={{bgColor: "#FFF7F3"}} border='none' _focus={{border: "none", boxShadow: "none",}}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
-                        <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[1])?.image}`} />
-                        <Text color='#8FB381'>{(category[1])?.categoryName}</Text>
+                        <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[0])?.image}`} />
+                        <Text color='#8FB381'>{(category[0])?.categoryName}</Text>
                     </Box> 
                 </Button>
-                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(2)}>
+                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(5)}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
-                        <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[2]  )?.image}`}/>
+                        <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[1]  )?.image}`}/>
+                        <Text color='#8FB381'>{(category[1]  )?.categoryName}</Text>
+                    </Box> 
+                </Button>
+                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(6)}>
+                    <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
+                        <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[2]  )?.image}`} />
                         <Text color='#8FB381'>{(category[2]  )?.categoryName}</Text>
                     </Box> 
                 </Button>
-                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(3)}>
+                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(13)}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                         <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[3]  )?.image}`} />
                         <Text color='#8FB381'>{(category[3]  )?.categoryName}</Text>
                     </Box> 
                 </Button>
-                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(4)}>
+                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(14)}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                         <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[4]  )?.image}`} />
                         <Text color='#8FB381'>{(category[4]  )?.categoryName}</Text>
                     </Box> 
                 </Button>
-                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(5)}>
+                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(16)}>
                     <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
                         <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[5]  )?.image}`} />
-                        <Text color='#8FB381'>{(category[5]  )?.categoryName}</Text>
-                    </Box> 
-                </Button>
-                <Button w='100px' h='100px' bgColor='#FFFFFF' onClick={() => onCategoryChange(6)}>
-                    <Box w='100%' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
-                        <Image src={`${process.env.REACT_APP_IMAGE_URL}/category/${(category[6]  )?.image}`} />
-                        <Text color='#8FB381'>{(category[6])?.categoryName}</Text>
+                        <Text color='#8FB381'>{(category[5])?.categoryName}</Text>
                     </Box> 
                 </Button>
       </Box>

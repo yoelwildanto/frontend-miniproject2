@@ -76,7 +76,7 @@ function ModalCreateCategory({ isOpen, onClose }) {
         <ModalOverlay />
         <form onSubmit={formik.handleSubmit}>
           <ModalContent w='490px' h='450px' bg={"#132043"}>
-            <ModalHeader>Create Category</ModalHeader>
+            <ModalHeader color='#8FB381'>Create Category</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <Box
@@ -162,7 +162,7 @@ function ModalCreateCategory({ isOpen, onClose }) {
               </Button>
               <Button
                 w='80px'
-                bgColor='#8FB381'
+                bgColor='#132043'
                 color='#ffffff'
                 onClick={onClose}
               >

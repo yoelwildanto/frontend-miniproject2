@@ -14,7 +14,7 @@ const HeaderManageCategory   = () => {
                         <IconSearch color='#838383' />
                     </Box>
                     
-                    <Button bgColor="#132043" color='#ffffff' display='flex' gap='10px' onClick={onOpen}> <IconPlus/> <Text>Create Category</Text> </Button>
+                    <Button bgColor='#132043' color='#ffffff' display='flex' gap='10px' onClick={onOpen}> <IconPlus/> <Text>Create Category</Text> </Button>
                 </Box>
                 
             </Box>
