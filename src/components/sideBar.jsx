@@ -84,7 +84,7 @@ const Sidebar = () => {
                   backgroundColor:
                     activeMenu === "dash" ? "#FFF7F3" : "transparent",
                 }}
-                onClick={() => handleMenuClick("product-list")}
+                onClick={() => handleMenuClick("dash")}
                 w="full"
                 h="56px"
                 gap="18px"
@@ -105,8 +105,37 @@ const Sidebar = () => {
                 </Text>
               </HStack>
             </Link>
-             {/* product */}
-             <HStack
+            {/* user management */}
+            <Link to={"/user-management"}>
+              <HStack
+                style={{
+                  color: activeMenu === "user" ? "#8FB381" : "#707070",
+                  backgroundColor:
+                    activeMenu === "user" ? "#FFF7F3" : "transparent",
+                }}
+                onClick={() => handleMenuClick("user")}
+                w="full"
+                h="56px"
+                gap="18px"
+              >
+                <Box
+                  w="5px"
+                  h="56px"
+                  bgColor="#8FB381"
+                  borderTopRightRadius="5px"
+                  borderBottomRightRadius="5px"
+                  style={{
+                    visibility: activeMenu === "user" ? "visible" : "hidden",
+                  }}
+                />
+                <IconUser stroke={2} size="24px" />
+                <Text fontFamily="Poppins" fontSize="18px" fontWeight="600">
+                  User Management
+                </Text>
+              </HStack>
+            </Link>
+            {/* product */}
+            <HStack
               style={{
                 color: activeMenu === "product" ? "#8FB381" : "#707070",
                 backgroundColor:
@@ -235,36 +264,6 @@ const Sidebar = () => {
                 </Link>
               </Box>
             )}
-            {/* user management */}
-            <Link to={"/user-management"}>
-              <HStack
-                style={{
-                  color: activeMenu === "user" ? "#8FB381" : "#707070",
-                  backgroundColor:
-                    activeMenu === "user" ? "#FFF7F3" : "transparent",
-                }}
-                onClick={() => handleMenuClick("user")}
-                w="full"
-                h="56px"
-                gap="18px"
-              >
-                <Box
-                  w="5px"
-                  h="56px"
-                  bgColor="#8FB381"
-                  borderTopRightRadius="5px"
-                  borderBottomRightRadius="5px"
-                  style={{
-                    visibility: activeMenu === "user" ? "visible" : "hidden",
-                  }}
-                />
-                <IconUser stroke={2} size="24px" />
-                <Text fontFamily="Poppins" fontSize="18px" fontWeight="600">
-                  User Management
-                </Text>
-              </HStack>
-            </Link>
-           
             {/* report */}
             <HStack
               style={{
