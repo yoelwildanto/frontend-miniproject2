@@ -291,7 +291,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
               <Button
                 w="80px"
                 variant="outline"
-                color="#132043"
+                color="#8FB381"
                 border="1px solid #132043"
                 type="submit"
               >

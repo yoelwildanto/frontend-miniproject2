@@ -137,7 +137,7 @@ const BodyManageProduct = ({}) => {
                 Status
               </Th>
               <Th fontSize="16px" color="#8FB381" textAlign="center">
-                Action
+                
               </Th>
             </Tr>
           </Thead>
@@ -154,8 +154,9 @@ const BodyManageProduct = ({}) => {
                 </Td>
                 <Td key={index}>
                   <Image
+                  objectFit={"contain"}
                     w="100px"
-                    h="60px"
+                    h="150px"
                     src={`${process.env.REACT_APP_IMAGE_URL}/product/${
                       item?.image
                     }`}
@@ -168,10 +169,12 @@ const BodyManageProduct = ({}) => {
                 <Td fontSize="16px">
                   <Box
                     w="160px"
-                    h="50px"
+                    h="90px"
+                    py={"auto"}
                     overflow="hidden"
                     textOverflow="ellipsis"
                     whiteSpace="normal"
+                    textAlign={"center"}
                   >
                     {item?.description}
                   </Box>
