@@ -99,7 +99,7 @@ function ModalCreateCategory({ isOpen, onClose }) {
                     flexDirection='column'
                     alignItems='center'
                   >
-                    <FormLabel color='#696666'>Category Icon</FormLabel>
+                    <FormLabel color='#8FB381'>Category Icon</FormLabel>
                     <Box
                       bgColor='#EEEDED'
                       w='174px'
@@ -139,7 +139,7 @@ function ModalCreateCategory({ isOpen, onClose }) {
                   </FormControl>
                 </Box>
                 <FormControl>
-                  <FormLabel color='#696666'>Category Name</FormLabel>
+                  <FormLabel color='#8FB381'>Category Name</FormLabel>
                   <Input
                     bgColor='#EEEDED'
                     placeholder='Category name here...'
@@ -154,15 +154,15 @@ function ModalCreateCategory({ isOpen, onClose }) {
               <Button
                 w='80px'
                 variant='outline'
-                color='#FF7940'
-                border='1px solid #FF7940'
+                color='#132043'
+                border='1px solid #132043'
                 type='submit'
               >
                 Save
               </Button>
               <Button
                 w='80px'
-                bgColor='#FF7940'
+                bgColor='#132043'
                 color='#ffffff'
                 onClick={onClose}
               >
