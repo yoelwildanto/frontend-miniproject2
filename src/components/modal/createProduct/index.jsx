@@ -66,7 +66,7 @@ const ModalCreateProduct = ({ isOpen, onClose }) => {
             });
             const res = await axios.post("http://localhost:8080/product", formData);
             toast({ title: res?.data?.message, status: 'success', position: 'top', duration: 4000, isClosable: true });
-            setTimeout(() => { onClose(); window.location.reload(); }, 3000);
+            setTimeout(() => { onClose(); window.location.reload(); }, 1000);
         } catch (err) {
             toast({ title: err?.response?.data, status: 'error', position: 'top', duration: 2000, isClosable: true });
         }
