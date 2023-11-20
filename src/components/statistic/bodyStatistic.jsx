@@ -106,7 +106,7 @@ const BodyStatistic = () => {
                     </Card>                           
             </Box>
             <Box>
-                <Text color='#000000' fontFamily="Nunito" fontWeight='700' fontSize='18px'>Earnings</Text>
+                <Text color='#000000' fontFamily="Poppins" fontWeight='700' fontSize='18px'>Earnings</Text>
                 <Box bgColor='#ffffff' padding='10px' mt='20px' borderRadius='20px'>
                     <AreaChart/>
                 </Box>
