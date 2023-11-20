@@ -2,6 +2,9 @@ import { useState } from 'react';
 import AdminPage from './pages/AdminView';
 import HeaderManageProduct from './components/manageProduct/headerManageProduct';
 import BodyManageProduct from './components/manageProduct/bodyManageProduct';
+import HeaderProductList from './components/productList/headerProductList';
+import BodyProductList from './components/productList/bodyProductList';
+import FooterProductList from './components/productList/footerProductList';
 import "./App.css"
 import { Route, Routes } from 'react-router-dom';
 

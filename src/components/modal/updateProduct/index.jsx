@@ -297,14 +297,14 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
               >
                 Save
               </Button>
-              <Button
+              {/* <Button
                 w="80px"
                 bgColor="#132043"
                 color="#ffffff"
                 onClick={handleResetForm}
               >
                 Cancel
-              </Button>
+              </Button> */}
             </ModalFooter>
           </ModalContent>
         </form>
