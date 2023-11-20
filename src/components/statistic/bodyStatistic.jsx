@@ -11,7 +11,7 @@ const BodyStatistic = () => {
     return (
         <Box mt='50px'>
             <Box display='flex' gap='30px' mb='30px'>
-                <Card w='400px' h='230px' padding='5' borderRadius='16px' background= "linear-gradient(102.57deg, #FF7940 19.4%, #FF40B3 95.09%)">
+                <Card w='400px' h='230px' padding='5' borderRadius='16px' background= "linear-gradient(102.57deg, #132043 19.4%, #FF40B3 95.09%)">
                         <CardBody padding='10px' paddingTop='100px'>
                             <Stack spacing='1.5' alignItems='center' gap='14px'>
                                 <Box w='126px' h='126px' display='flex' alignItems='center' justifyContent='center' position='absolute' top='18%' left='86%' transform='translate(-50%, -50%)' borderRadius='4px'>

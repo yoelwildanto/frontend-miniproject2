@@ -19,7 +19,7 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
       const res = await axios.get(`http://localhost:8080/product/pagination`, {
         params: {
           page: pageToFetch,
-          pageSize: 7,
+          pageSize: 8,
           productName: inputSearch,
           categoryId: categoryChange,
           alphaId: alphabet,
