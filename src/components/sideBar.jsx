@@ -61,7 +61,7 @@ const Sidebar = () => {
         paddingBottom="32px"
       >
         <Box display="flex" flexDirection="column" gap="45px">
-          <Link to={""}>
+          <Link to={"/product-list"}>
             <HStack spacing="0" padding="32px 0 0 24px">
               {/* <Image src="../../public/asset/logo.svg" /> */}
               <Text
@@ -77,14 +77,14 @@ const Sidebar = () => {
           {/* menu list */}
           <Box display="flex" flexDirection="column" gap="10px">
             {/* dashboard */}
-            <Link to={""}>
+            <Link to={"/product-list"}>
               <HStack
                 style={{
                   color: activeMenu === "dash" ? "#8FB381" : "#707070",
                   backgroundColor:
                     activeMenu === "dash" ? "#FFF7F3" : "transparent",
                 }}
-                onClick={() => handleMenuClick("dash")}
+                onClick={() => handleMenuClick("product-list")}
                 w="full"
                 h="56px"
                 gap="18px"

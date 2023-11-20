@@ -169,7 +169,7 @@ const BodyManageProduct = ({}) => {
                 <Td fontSize="16px">
                   <Box
                     w="160px"
-                    h="90px"
+                    h="110px"
                     py={"auto"}
                     overflow="hidden"
                     textOverflow="ellipsis"
