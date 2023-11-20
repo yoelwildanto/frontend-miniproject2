@@ -66,7 +66,7 @@ const ModalCreateProduct = ({ isOpen, onClose }) => {
             });
             const res = await axios.post("http://localhost:8080/product", formData);
             toast({ title: res?.data?.message, status: 'success', position: 'top', duration: 4000, isClosable: true });
-            setTimeout(() => { onClose(); window.location.reload(); }, 1000);
+            setTimeout(() => { onClose(); window.location.reload(); }, 3000);
         } catch (err) {
             toast({ title: err?.response?.data, status: 'error', position: 'top', duration: 2000, isClosable: true });
         }
@@ -108,7 +108,11 @@ const ModalCreateProduct = ({ isOpen, onClose }) => {
                                                         <IconPhotoDown color='#132043' width='130px' height='80px' />
                                                     </Box>
                                                 </Box>
-                                                {image && <img src={image}/>}
+                                                {/* {image && <img src={image}/>} */}
+                                                {/* {image && <img src={image} style={{ maxWidth: '60%' }} />} */}
+                                                {image && <img src={image} style={{ maxWidth: '60%', maxHeight: '250px' }} />}
+
+
                                             </Box>
                                         </FormControl>
                                         <FormControl>
@@ -155,7 +159,7 @@ const ModalCreateProduct = ({ isOpen, onClose }) => {
                         </ModalBody>
                         <ModalFooter display='flex' gap='20px'>
                             <Button w='80px' variant='outline' color='#8FB381' border='1px solid #132043' type='submit'>Save</Button>
-                            <Button w='80px' bgColor='#ffffff' color='#8FB381' onClick={handleResetForm}>Cancel</Button>
+                            <Button w='80px' bgColor='#ffffff' color='#132043' onClick={handleResetForm}>Reset</Button>
                         </ModalFooter>
                     </ModalContent>
                 </form>
