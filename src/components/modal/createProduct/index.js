@@ -100,7 +100,7 @@ const ModalCreateProduct = ({ isOpen, onClose }) => {
                                 <Box display='flex' w='100%' gap='20px'>
                                     <Box w='50%' display='flex' flexDirection='column' gap='20px'>
                                         <FormControl>
-                                            <FormLabel color='#696666'>Product Image</FormLabel>
+                                            <FormLabel color='#8FB381'>Product Image</FormLabel>
                                             <Box mb={"25px"} objectFit={"contain"} bgColor='#EEEDED' h='265px' display='flex' alignItems='center' justifyContent='center' borderRadius='10px'>
                                                 <Box {...getRootProps()} className="dropzone" objectFit={"contain"} color="#ffffff" display="flex" alignItems="center" justifyContent="center">
                                                     <Input {...getInputProps()} size="xl" type='file' w='100%' h='100%' position='absolute' opacity='0' />
@@ -112,7 +112,7 @@ const ModalCreateProduct = ({ isOpen, onClose }) => {
                                             </Box>
                                         </FormControl>
                                         <FormControl>
-                                            <FormLabel color='#696666'>Status</FormLabel>
+                                            <FormLabel color='#8FB381'>Status</FormLabel>
                                             <Select bgColor='#EEEDED' placeholder='Select Status' name="statusId" value={formik.values.statusId} onChange={formik.handleChange}>
                                                 {status?.map((item, index) => (
                                                     <option key={index} value={item.id}>{item.statusName}</option>
@@ -122,22 +122,22 @@ const ModalCreateProduct = ({ isOpen, onClose }) => {
                                     </Box>
                                     <Box w='50%' display='flex' flexDirection='column' gap='41px'>
                                         <FormControl>
-                                            <FormLabel color='#696666'>Product Name</FormLabel>
+                                            <FormLabel color='#8FB381'>Product Name</FormLabel>
                                             <Input bgColor='#EEEDED' placeholder='Product name here...' name="productName" value={formik.values.productName} onChange={formik.handleChange} />
                                         </FormControl>
                                         <FormControl>
-                                            <FormLabel color='#696666'>Price</FormLabel>
+                                            <FormLabel color='#8FB381'>Price</FormLabel>
                                             <InputGroup>
                                                 <InputLeftAddon bgColor='#EEEDED' children='Rp' />
                                                 <Input type='tel' bgColor='#EEEDED' placeholder='Price' name="price" value={formik.values.price} onChange={formik.handleChange} />
                                             </InputGroup>
                                         </FormControl>
                                         <FormControl>
-                                            <FormLabel color='#696666'>Stock</FormLabel>
+                                            <FormLabel color='#8FB381'>Stock</FormLabel>
                                             <Input bgColor='#EEEDED' placeholder='Total Stock' name="stock" value={formik.values.stock} onChange={formik.handleChange} />
                                         </FormControl>
                                         <FormControl>
-                                            <FormLabel color='#696666'>Product Category</FormLabel>
+                                            <FormLabel color='#8FB381'>Product Category</FormLabel>
                                             <Select bgColor='#EEEDED' placeholder='Select Category' name="categoryId" value={formik.values.categoryId} onChange={formik.handleChange}>
                                                 {category?.map((item, index) => (
                                                     <option key={index} value={item.id}>{item.categoryName}</option>
@@ -148,14 +148,14 @@ const ModalCreateProduct = ({ isOpen, onClose }) => {
 
                                 </Box>
                                 <FormControl>
-                                    <FormLabel color='#696666'>Description</FormLabel>
+                                    <FormLabel color='#8FB381'>Description</FormLabel>
                                     <Textarea bgColor='#EEEDED' placeholder='Tell the description of the product here...' name="description" value={formik.values.description} onChange={formik.handleChange} />
                                 </FormControl>
                             </Box>
                         </ModalBody>
                         <ModalFooter display='flex' gap='20px'>
-                            <Button w='80px' variant='outline' color='#ffffff' border='1px solid #132043' type='submit'>Save</Button>
-                            <Button w='80px' bgColor='#ffffff' color='#132043' onClick={handleResetForm}>Cancel</Button>
+                            <Button w='80px' variant='outline' color='#8FB381' border='1px solid #132043' type='submit'>Save</Button>
+                            <Button w='80px' bgColor='#ffffff' color='#8FB381' onClick={handleResetForm}>Cancel</Button>
                         </ModalFooter>
                     </ModalContent>
                 </form>
