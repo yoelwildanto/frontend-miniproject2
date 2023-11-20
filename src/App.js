@@ -5,6 +5,7 @@ import BodyManageProduct from './components/manageProduct/bodyManageProduct';
 import HeaderProductList from './components/productList/headerProductList';
 import BodyProductList from './components/productList/bodyProductList';
 import FooterProductList from './components/productList/footerProductList';
+import HeaderManageCategory from './components/manageCategory/headerManageCategory';
 import "./App.css"
 import { Route, Routes } from 'react-router-dom';
 
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path='/' element={<AdminPage />} />
         <Route path='/manage-product' element={<AdminPage viewHeader={<HeaderManageProduct/>} viewBody={<BodyManageProduct/>} />} />
+        <Route path='/manage-category'element={<AdminPage viewHeader={<HeaderManageCategory/>} viewBody={<BodyManageProduct />}  />} />
         <Route path='/product-list' element={<AdminPage viewHeader={<HeaderProductList inputSearch={handleSearch} />} viewBody={<BodyProductList currentPage={currentPage} onPageChange={handlePageChange} inputSearch={inputSearch}/>} viewFooter={<FooterProductList currentPage={currentPage} onPageChange={handlePageChange}/>}/>} />
       </Routes>
     </div>
