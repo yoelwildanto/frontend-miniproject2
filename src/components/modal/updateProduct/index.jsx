@@ -159,7 +159,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
       <Modal onClose={onClose} isOpen={isOpen} size="custom" isCentered>
         <ModalOverlay />
         <form onSubmit={formik.handleSubmit}>
-          <ModalContent w="1050px" h="700px">
+          <ModalContent w="1050px" h="700px" bg={"#132043"}>
             <ModalHeader>Update Product</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
@@ -172,7 +172,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
                 <Box display="flex" w="100%" gap="20px">
                   <Box w="50%" display="flex" flexDirection="column" gap="20px">
                     <FormControl>
-                      <FormLabel color="#696666">Product Image</FormLabel>
+                      <FormLabel color="#8FB381">Product Image</FormLabel>
                       <Box
                         bgColor="#EEEDED"
                         h="265px"
@@ -210,7 +210,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
                       </Box>
                     </FormControl>
                     <FormControl>
-                      <FormLabel color="#696666">Status</FormLabel>
+                      <FormLabel color="#8FB381">Status</FormLabel>
                       <Select
                         bgColor="#EEEDED"
                         name="statusId"
@@ -227,7 +227,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
                   </Box>
                   <Box w="50%" display="flex" flexDirection="column" gap="34px">
                     <FormControl>
-                      <FormLabel color="#696666">Product Name</FormLabel>
+                      <FormLabel color="#8FB381">Product Name</FormLabel>
                       <Input
                         bgColor="#EEEDED"
                         placeholder=""
@@ -238,7 +238,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
                       />
                     </FormControl>
                     <FormControl>
-                      <FormLabel color="#696666">Price</FormLabel>
+                      <FormLabel color="#8FB381">Price</FormLabel>
                       <InputGroup>
                         <InputLeftAddon bgColor="#EEEDED" children="Rp" />
                         <Input
@@ -251,7 +251,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
                       </InputGroup>
                     </FormControl>
                     <FormControl>
-                      <FormLabel color="#696666">Stock</FormLabel>
+                      <FormLabel color="#8FB381">Stock</FormLabel>
                       <Input
                         bgColor="#EEEDED"
                         name="stock"
@@ -260,7 +260,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
                       />
                     </FormControl>
                     <FormControl>
-                      <FormLabel color="#696666">Product Category</FormLabel>
+                      <FormLabel color="#8FB381">Product Category</FormLabel>
                       <Select
                         bgColor="#EEEDED"
                         name="categoryId"
@@ -277,7 +277,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
                   </Box>
                 </Box>
                 <FormControl>
-                  <FormLabel color="#696666">Description</FormLabel>
+                  <FormLabel color="#8FB381">Description</FormLabel>
                   <Textarea
                     bgColor="#EEEDED"
                     name="description"
