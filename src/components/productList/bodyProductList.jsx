@@ -103,7 +103,7 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
         </Box>
         <Box mt="10px">
           <Grid
-            templateColumns="repeat(6, 1fr)"
+            templateColumns="repeat(4, 1fr)"
             gridColumnGap={5}
             gridRowGap={10}
             overflow="hidden"

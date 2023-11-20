@@ -71,15 +71,15 @@ const BodyManageCategory = () => {
           <Thead bgColor='#132043' h='40px'>
             <Tr>
               <Th>
-                <Checkbox
+                {/* <Checkbox
                   isChecked={selectAll}
                   onChange={() => setSelectAll(!selectAll)}
-                />
+                /> */}
               </Th>
               <Th color='#ffffff'>Category Icon</Th>
               <Th color='#ffffff'>Category Name</Th>
               <Th color='#ffffff' textAlign='center'>
-                Action
+                
               </Th>
             </Tr>
           </Thead>
@@ -92,7 +92,7 @@ const BodyManageCategory = () => {
             {category.map((item, index) => (
               <Tr key={index}>
                 <Td>
-                  <Checkbox isChecked={selectAll} />
+                  {/* <Checkbox isChecked={selectAll} /> */}
                 </Td>
                 <Td>
                   <Image
