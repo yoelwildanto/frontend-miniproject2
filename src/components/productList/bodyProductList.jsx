@@ -109,32 +109,7 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
             overflow="hidden"
             padding="20px"
           >
-            {/* {product?.map((item : any) => (
-                            <GridItem>
-                                <Card w='220px' h='300px' padding='0' borderRadius='16px'>
-                                    <Box display='flex' alignItems='flex-end' justifyContent='right'>
-                                        <Image  w='100%' borderTopRadius='16px' src={`${import.meta.env.VITE_APP_IMAGE_URL}/product/${item?.image}`}/>
-                                        <Box w='35px' h='35px' display='flex' alignItems='center' justifyContent='center' position='absolute' top='38%' left='87%' transform='translate(-50%, -50%)' bgColor='rgba(148, 148, 148, 0.7)' borderRadius='4px'>
-                                            <IconPlus color='#ffffff'/>
-                                        </Box>
-                                    </Box>
-                                    <CardBody padding='10px'>
-                                        <Stack spacing='4'>
-                                            <Heading size='sm'>{item?.productName}</Heading>
-                                            <Box h='60px' overflow='hidden'>
-                                                <Text textAlign='justify' fontSize='14px'>
-                                                    {item?.description}
-                                                </Text>
-                                            </Box>
-                                            <Text color='#8FB381' fontSize='16px' fontWeight='600'>
-                                               Rp. {item?.price}
-                                            </Text>
-                                        </Stack>
-                                    </CardBody>
-                                </Card>
-                            </GridItem>
-                        ))} */}
-
+            
             {product?.map((item) => (
               <GridItem
                 display="flex"
@@ -223,21 +198,7 @@ function BodyProductList({ currentPage, onPageChange, inputSearch }) {
                           item?.image
                         }`}
                       />
-                      {/* <Box
-                        w="35px"
-                        h="35px"
-                        display="flex"
-                        alignItems="center"
-                        justifyContent="center"
-                        position="absolute"
-                        top="38%"
-                        left="87%"
-                        transform="translate(-50%, -50%)"
-                        bgColor="rgba(148, 148, 148, 0.7)"
-                        borderRadius="4px"
-                      >
-                        <IconPlus color="#ffffff" />
-                      </Box> */}
+                     
                     </Box>
                     <CardBody padding="10px">
                       <Stack spacing="4">

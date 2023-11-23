@@ -133,9 +133,9 @@ const BodyManageProduct = ({}) => {
               <Th fontSize="16px" color="#8FB381">
                 Description
               </Th>
-              <Th fontSize="16px" color="#8FB381" textAlign="center">
+              {/* <Th fontSize="16px" color="#8FB381" textAlign="center">
                 Status
-              </Th>
+              </Th> */}
               <Th fontSize="16px" color="#8FB381" textAlign="center">
                 
               </Th>
@@ -179,7 +179,7 @@ const BodyManageProduct = ({}) => {
                     {item?.description}
                   </Box>
                 </Td>
-                <Td textAlign="center">
+                {/* <Td textAlign="center">
                   <Switch
                     colorScheme="green"
                     isChecked={item.statusId === 2}
@@ -187,7 +187,7 @@ const BodyManageProduct = ({}) => {
                       updateProductStatus(item.id, item.statusId === 2 ? 1 : 2)
                     }
                   />
-                </Td>
+                </Td> */}
                 <Td textAlign="center">
                   <Box display="flex" justifyContent="center" gap="10px">
                     <Button

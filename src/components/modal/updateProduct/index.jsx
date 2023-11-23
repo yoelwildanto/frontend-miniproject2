@@ -97,7 +97,7 @@ const ModalUpdateProduct = ({ isOpen, onClose, productId, productById }) => {
       });
       setTimeout(() => {
         onClose();
-      }, 3000);
+      }, 1000);
     } catch (err) {
       toast({
         title: err?.response?.data,

@@ -33,11 +33,11 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<AdminPage viewHeader={<HeaderProductList inputSearch={handleSearch} />} viewBody={<BodyProductList currentPage={currentPage} onPageChange={handlePageChange} inputSearch={inputSearch}/>} viewFooter={<FooterProductList currentPage={currentPage} onPageChange={handlePageChange}/>}/>} />
-        <Route path='/manage-product' element={<AdminPage viewHeader={<HeaderManageProduct/>} viewBody={<BodyManageProduct/>} />} />
-        <Route path='/manage-category'element={<AdminPage viewHeader={<HeaderManageCategory/>} viewBody={<BodyManageCategory />}  />} />
-        <Route path='/product-list' element={<AdminPage viewHeader={<HeaderProductList inputSearch={handleSearch} />} viewBody={<BodyProductList currentPage={currentPage} onPageChange={handlePageChange} inputSearch={inputSearch}/>} viewFooter={<FooterProductList currentPage={currentPage} onPageChange={handlePageChange}/>}/>} />
-        <Route path='/report-statistic' element={<AdminPage viewHeader={<HeaderStatistic />} viewBody={<BodyStatistic/>} />} />
+        <Route path='/' element={<AdminPage viewHeader={<HeaderProductList inputSearch={handleSearch} />} viewBody={<BodyProductList currentPage={currentPage} onPageChange={handlePageChange} inputSearch={inputSearch} />} viewFooter={<FooterProductList currentPage={currentPage} onPageChange={handlePageChange} />} />} />
+        <Route path='/manage-product' element={<AdminPage viewHeader={<HeaderManageProduct />} viewBody={<BodyManageProduct />} />} />
+        <Route path='/manage-category' element={<AdminPage viewHeader={<HeaderManageCategory />} viewBody={<BodyManageCategory />} />} />
+        <Route path='/product-list' element={<AdminPage viewHeader={<HeaderProductList inputSearch={handleSearch} />} viewBody={<BodyProductList currentPage={currentPage} onPageChange={handlePageChange} inputSearch={inputSearch} />} viewFooter={<FooterProductList currentPage={currentPage} onPageChange={handlePageChange} />} />} />
+        <Route path='/report-statistic' element={<AdminPage viewHeader={<HeaderStatistic />} viewBody={<BodyStatistic />} />} />
 
       </Routes>
     </div>
